@@ -4,17 +4,42 @@
 <head>
     <meta charset="utf-8" />
     <title>Product Landing Page</title>
+
+    <style>
+@media (max-width:500px) {
+    nav{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+    </style>
 </head>
 <body>
-    <header id="header">
-        <img src="" id="header-img" />
-        <nav id="nav-bar">
-            <li><a class="nav-link" href="#Features">Features</a></li>
-            <li><a class="nav-link" href="#How it works">How it works</a></li>
-            <li><a class="nav-link" href="#Pricing"></a>Pricing</li>
-        </nav>
-    </header>
-    <iframe src="" id="video"></iframe>
+  <header id="header">
+		<img src="" id="header-img" />
+		<nav id="nav-bar" >
+		<ul>
+		<li><a  class="nav-link" href="#features">Features</a></li>
+		<li><a  class="nav-link" href="#how it works">How it works</a></li>
+		<li><a  class="nav-link" href="#Pricing">Pricing</a></li>
+		</ul>
+		</nav>
+	</header>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <input
+  id="email"
+  name="email"
+  type="email"
+  placeholder="Enter your email"
+  required
+  />
+  <input type="submit" name="submit" id="submit"/>
+</form>
+<div id="Features"></div>
+<div id="How it works"></div>
+<div id="Pricing"></div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
